@@ -48,7 +48,7 @@
     [super viewDidLoad];
   
     [self setNavigationBar];
-    [self initView];
+    [self addsubview];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -82,7 +82,7 @@
 
 
 
-- (void)initView{
+- (void)addsubview{
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth - kScreenHeight/2)/2, 64+40, kScreenHeight/2, kScreenHeight/2)];
     imageView.image = [UIImage imageNamed:@"scan_back_image.png"];
     [self.view addSubview:imageView];
