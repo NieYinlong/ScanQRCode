@@ -18,6 +18,8 @@
 		9D2B89D81E1B889B005EEC3F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2B89D71E1B889B005EEC3F /* AVFoundation.framework */; };
 		9D2B89DC1E1B89C7005EEC3F /* UIView+WLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B89DB1E1B89C7005EEC3F /* UIView+WLFrame.m */; };
 		9D2B89DE1E1B8B2D005EEC3F /* scan_line_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D2B89DD1E1B8B2D005EEC3F /* scan_line_image.png */; };
+		9D2B89E01E1B9DDD005EEC3F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2B89DF1E1B9DDD005EEC3F /* AudioToolbox.framework */; };
+		9D2B89E31E1B9E6A005EEC3F /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B89E21E1B9E6A005EEC3F /* SecViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		9D2B89DA1E1B89C7005EEC3F /* UIView+WLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLFrame.h"; sourceTree = "<group>"; };
 		9D2B89DB1E1B89C7005EEC3F /* UIView+WLFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLFrame.m"; sourceTree = "<group>"; };
 		9D2B89DD1E1B8B2D005EEC3F /* scan_line_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_line_image.png; sourceTree = "<group>"; };
+		9D2B89DF1E1B9DDD005EEC3F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9D2B89E11E1B9E6A005EEC3F /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		9D2B89E21E1B9E6A005EEC3F /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2B89E01E1B9DDD005EEC3F /* AudioToolbox.framework in Frameworks */,
 				9D2B89D81E1B889B005EEC3F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +121,8 @@
 				9D2B89A71E1B8867005EEC3F /* AppDelegate.m */,
 				9D2B89A91E1B8867005EEC3F /* ViewController.h */,
 				9D2B89AA1E1B8867005EEC3F /* ViewController.m */,
+				9D2B89E11E1B9E6A005EEC3F /* SecViewController.h */,
+				9D2B89E21E1B9E6A005EEC3F /* SecViewController.m */,
 				9D2B89DD1E1B8B2D005EEC3F /* scan_line_image.png */,
 				9D2B89AC1E1B8867005EEC3F /* Main.storyboard */,
 				9D2B89AF1E1B8867005EEC3F /* Assets.xcassets */,
@@ -154,6 +162,7 @@
 		9D2B89D61E1B889B005EEC3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D2B89DF1E1B9DDD005EEC3F /* AudioToolbox.framework */,
 				9D2B89D71E1B889B005EEC3F /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -308,6 +317,7 @@
 				9D2B89AB1E1B8867005EEC3F /* ViewController.m in Sources */,
 				9D2B89DC1E1B89C7005EEC3F /* UIView+WLFrame.m in Sources */,
 				9D2B89A81E1B8867005EEC3F /* AppDelegate.m in Sources */,
+				9D2B89E31E1B9E6A005EEC3F /* SecViewController.m in Sources */,
 				9D2B89A51E1B8867005EEC3F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +556,7 @@
 				9D2B89CF1E1B8868005EEC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2B89D01E1B8868005EEC3F /* Build configuration list for PBXNativeTarget "ScanQRCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +565,7 @@
 				9D2B89D21E1B8868005EEC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2B89D31E1B8868005EEC3F /* Build configuration list for PBXNativeTarget "ScanQRCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +574,7 @@
 				9D2B89D51E1B8868005EEC3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,11 +8,14 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "UIView+WLFrame.h"
-
+#import "SecViewController.h"
 #define  kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define  kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+
+// 这个soundQR 带声音
 @interface ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 {
     UIImageView *lineImageView;
@@ -36,12 +39,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //[AnalyticUtil UMBeginLogPageView:@"ScanViewController"];
     
-    self.navigationController.navigationBar.hidden = NO;
+    
+    self.navigationController.navigationBar.hidden = YES;
     
     [self.session startRunning];
     [self openCamera];
+    
 }
 
 - (void)viewDidLoad {
@@ -189,11 +193,18 @@
         
         // 这里可以进行跳转或者返回
         
+        
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate); // 系统震动
+        //AudioServicesPlaySystemSound(1007); // 推送的声音
+        
+        // 1000 - 2000之间
+        AudioServicesPlaySystemSound(1010);
+        
+        SecViewController *VC = [SecViewController new];
+        [self.navigationController pushViewController:VC animated:YES];
+        
     }
     [self.session stopRunning];
-    
-    
-    
     
 
 }
